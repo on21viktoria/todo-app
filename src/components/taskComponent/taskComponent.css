@@ -19,6 +19,13 @@
   justify-content: center;
 }
 
-.taskComponent_task-input {
+.taskComponent_task-text {
   min-width: 150px;
+}
+
+.taskComponent_task-input {
+  border: 1px solid #fff;
+}
+.taskComponent_task-input:focus {
+  outline: none;
 }

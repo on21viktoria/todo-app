@@ -16,7 +16,7 @@ export const TaskComponent = ({ task, deleteTask }) => {
   return (
     <div className="taskComponent_to-do-item" key={task.id}>
       {isReadonly ? (
-        <p class="taskComponent_task-input">{task.taskName}</p>
+        <p class="taskComponent_task-text">{task.taskName}</p>
       ) : (
         <input
           class="taskComponent_task-input"
