@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TasklistComponent } from "./../tasklistComponent/tasklistComponent.js";
 import { TextInputComponent } from "./../textInputComponent/textInputComponent.js";
 
-export const AddTaskComponent = () => {
+export const TaskpageComponent = () => {
   const [todoList, setTodoList] = useState([]);
 
   function addTodo(newItem) {

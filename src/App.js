@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { StartpageComponent } from "./components/startpageComponent/startpageComponent.js";
-import { AddTaskComponent } from "./components/addTaskComponent/addTaskComponent.js";
+import { TaskpageComponent } from "./components/taskpageComponent/taskpageComponent.js";
 
 function App() {
   console.log("I render");
@@ -13,7 +13,7 @@ function App() {
         buttonName={"Start"}
         isVisible={true}
       />
-      <AddTaskComponent />
+      <TaskpageComponent />
     </div>
   );
 }
