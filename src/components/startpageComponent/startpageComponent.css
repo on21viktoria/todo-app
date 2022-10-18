@@ -1,7 +1,9 @@
 .startpageComponent_button {
   background: transparent;
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
   border: none;
   padding: 0px 10px 10px 10px;
 }
@@ -9,4 +11,9 @@
 * {
   background-color: #000;
   color: #fff;
+}
+
+.startpageComponent_headline {
+  margin-top: 100px;
+  font-size: 40px;
 }

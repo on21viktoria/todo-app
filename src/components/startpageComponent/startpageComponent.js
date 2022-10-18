@@ -19,7 +19,7 @@ export const StartpageComponent = ({
   if (startpageVisibility) {
     return (
       <div>
-        <h1>{title}</h1>
+        <h1 class="startpageComponent_headline">{title}</h1>
         <div>
           <img src={logo} className="App-logo" alt="logo" />
         </div>

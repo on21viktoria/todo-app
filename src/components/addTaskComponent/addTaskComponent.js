@@ -22,7 +22,7 @@ export const AddTaskComponent = ({ functionToAddTask }) => {
   return (
     <div>
       <input
-        id="taskInput"
+        class="addTaskComponent_task-input"
         type="text"
         placeholder="Tippe etwas..."
         value={newTodo.taskName || ""}
