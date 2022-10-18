@@ -17,5 +17,5 @@ export const StartpageComponent = ({ title, logo, isVisible, buttonName }) => {
         <button onClick={hideStartpage}>{buttonName}</button>
       </div>
     );
-  } else return <></>;
+  } else return;
 };

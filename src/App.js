@@ -4,6 +4,7 @@ import { StartpageComponent } from "./components/startpageComponent/startpageCom
 import { AddTaskComponent } from "./components/addTaskComponent/addTaskComponent.js";
 
 function App() {
+  console.log("I render");
   return (
     <div className="App">
       <StartpageComponent
