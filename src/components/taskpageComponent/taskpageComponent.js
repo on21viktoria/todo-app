@@ -10,9 +10,15 @@ export const TaskpageComponent = () => {
     setTodoList((currentTodoList) => [...currentTodoList, newItem]);
   }
 
-  function deleteTaskFromList(key) {
+  function deleteTaskFromList(toDoId) {
     console.log("Task deleted");
-    console.log(key);
+    setTodoList((currentTodoList) =>
+      currentTodoList.filter((item) => item.id !== toDoId)
+    );
+  }
+
+  function resetList() {
+    setTodoList([]);
   }
 
   return (
@@ -22,6 +28,7 @@ export const TaskpageComponent = () => {
         functionToDeleteTask={deleteTaskFromList}
         toDos={todoList}
       />
+      <button onClick={resetList}>Liste zurücksetzen</button>
     </div>
   );
 };

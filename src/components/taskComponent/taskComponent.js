@@ -1,9 +1,9 @@
 import React from "react";
 
-export const TaskComponent = ({ taskName }) => {
+export const TaskComponent = ({ taskName, readonlyProp }) => {
   return (
     <div>
-      <p>{taskName}</p>
+      <input type="text" defaultValue={taskName} readOnly={readonlyProp} />
     </div>
   );
 };

@@ -3,11 +3,14 @@ import React, { useState } from "react";
 // Nimmt Eingaben von Nutzer entgegen und übergibt sie mit Klick auf den Button
 // als Parameter an die Funktion functionToAddTask der Elternkomponente.
 export const AddTaskComponent = ({ functionToAddTask }) => {
-  const [newTodo, setNewTodo] = useState("");
+  const [newTodo, setNewTodo] = useState([]);
 
   function changeHandler(event) {
-    let todoInput = event.target.value;
-    setNewTodo(todoInput);
+    const newTodoObject = {
+      id: new Date().getTime(),
+      taskName: event.target.value,
+    };
+    setNewTodo(newTodoObject);
   }
 
   function addItem() {
@@ -19,7 +22,7 @@ export const AddTaskComponent = ({ functionToAddTask }) => {
       <input
         type="text"
         placeholder="Tippe etwas..."
-        value={newTodo}
+        value={newTodo.taskName || ""}
         onChange={changeHandler}
       />
       <button onClick={addItem}>Hinzufügen</button>
