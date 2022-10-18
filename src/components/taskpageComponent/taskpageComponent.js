@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { TasklistComponent } from "./../tasklistComponent/tasklistComponent.js";
-import { TextInputComponent } from "./../textInputComponent/textInputComponent.js";
+import { AddTaskComponent } from "../addTaskComponent/addTaskComponent.js";
 
+// Verwaltet Kommunikation zwischen Eingabefeld für neue To Dos und der Tasklist, die die To Dos anzeigt.
 export const TaskpageComponent = () => {
   const [todoList, setTodoList] = useState([]);
 
-  function addTodo(newItem) {
-    setTodoList((bestehendesArray) => [...bestehendesArray, newItem]);
+  function addTaskToList(newItem) {
+    setTodoList((currentTodoList) => [...currentTodoList, newItem]);
   }
 
   return (
     <div>
-      <TextInputComponent funktionVonElternKomponente={addTodo} />
+      <AddTaskComponent functionToAddTask={addTaskToList} />
       <TasklistComponent toDos={todoList} />
     </div>
   );

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-export const TextInputComponent = ({ funktionVonElternKomponente }) => {
+// Nimmt Eingaben von Nutzer entgegen und übergibt sie mit Klick auf den Button
+// als Parameter an die Funktion functionToAddTask der Elternkomponente.
+export const AddTaskComponent = ({ functionToAddTask }) => {
   const [newTodo, setNewTodo] = useState("");
 
   function changeHandler(event) {
@@ -9,7 +11,7 @@ export const TextInputComponent = ({ funktionVonElternKomponente }) => {
   }
 
   function addItem() {
-    funktionVonElternKomponente(newTodo);
+    functionToAddTask(newTodo);
   }
 
   return (
