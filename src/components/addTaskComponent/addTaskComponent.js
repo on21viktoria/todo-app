@@ -9,6 +9,7 @@ export const AddTaskComponent = ({ functionToAddTask }) => {
     const newTodoObject = {
       id: new Date().getTime(),
       taskName: event.target.value,
+      editable: false,
     };
     setNewTodo(newTodoObject);
   }
@@ -20,6 +21,7 @@ export const AddTaskComponent = ({ functionToAddTask }) => {
   return (
     <div>
       <input
+        id="taskInput"
         type="text"
         placeholder="Tippe etwas..."
         value={newTodo.taskName || ""}

@@ -21,11 +21,11 @@ export const TasklistComponent = ({ functionToDeleteTask, toDos }) => {
     <ul>
       {toDos.map((toDo) => (
         <li key={toDo.id}>
-          <TaskComponent readonlyProp={isReadonly} taskName={toDo.taskName} />
+          <TaskComponent readonlyProp={isReadonly} task={toDo} />
           <button onClick={() => editTask(toDo.id)}>
             {isReadonly ? "Bearbeiten" : "Speichern"}
           </button>
-          <button onClick={() => deleteTask(toDo.id)}>Delete</button>
+          <button onClick={() => deleteTask(toDo.id)}>Löschen</button>
         </li>
       ))}
     </ul>

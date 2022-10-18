@@ -11,7 +11,6 @@ export const TaskpageComponent = () => {
   }
 
   function deleteTaskFromList(toDoId) {
-    console.log("Task deleted");
     setTodoList((currentTodoList) =>
       currentTodoList.filter((item) => item.id !== toDoId)
     );
