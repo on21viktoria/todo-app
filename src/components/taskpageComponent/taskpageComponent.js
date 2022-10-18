@@ -10,10 +10,18 @@ export const TaskpageComponent = () => {
     setTodoList((currentTodoList) => [...currentTodoList, newItem]);
   }
 
+  function deleteTaskFromList(key) {
+    console.log("Task deleted");
+    console.log(key);
+  }
+
   return (
     <div>
       <AddTaskComponent functionToAddTask={addTaskToList} />
-      <TasklistComponent toDos={todoList} />
+      <TasklistComponent
+        functionToDeleteTask={deleteTaskFromList}
+        toDos={todoList}
+      />
     </div>
   );
 };

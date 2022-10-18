@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Zeigt eine Startseite an, die mit Klick auf einen Button ausgeblendet werden kann.
 export const StartpageComponent = ({ title, logo, isVisible, buttonName }) => {
   const [internalVisibility, setVisibility] = useState(isVisible);
 
