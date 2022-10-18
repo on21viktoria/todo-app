@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { StartpageComponent } from "./components/startpageComponent/startpageComponent.js";
+import { AddTaskComponent } from "./components/addTaskComponent/addTaskComponent.js";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         buttonName={"Start"}
         isVisible={true}
       />
+      <AddTaskComponent />
     </div>
   );
 }
