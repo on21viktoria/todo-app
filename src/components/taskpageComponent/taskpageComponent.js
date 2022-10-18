@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { TasklistComponent } from "./../tasklistComponent/tasklistComponent.js";
 import { AddTaskComponent } from "../addTaskComponent/addTaskComponent.js";
+import "./taskpageComponent.css";
 
 // Verwaltet Kommunikation zwischen Eingabefeld für neue To Dos und der Tasklist, die die To Dos anzeigt.
 export const TaskpageComponent = () => {
@@ -27,7 +28,9 @@ export const TaskpageComponent = () => {
         functionToDeleteTask={deleteTaskFromList}
         toDos={todoList}
       />
-      <button onClick={resetList}>Liste zurücksetzen</button>
+      <button className="taskpageComponent_button" onClick={resetList}>
+        Liste zurücksetzen
+      </button>
     </div>
   );
 };

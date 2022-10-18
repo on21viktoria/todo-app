@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./startpageComponent.css";
 
 // Zeigt eine Startseite an, die mit Klick auf einen Button ausgeblendet werden kann.
 export const StartpageComponent = ({ title, logo, isVisible, buttonName }) => {
@@ -15,7 +16,9 @@ export const StartpageComponent = ({ title, logo, isVisible, buttonName }) => {
         <div>
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <button onClick={hideStartpage}>{buttonName}</button>
+        <button className="startpageComponent_button" onClick={hideStartpage}>
+          {buttonName}
+        </button>
       </div>
     );
   } else return;
