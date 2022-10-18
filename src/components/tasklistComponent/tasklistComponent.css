@@ -1,16 +1,3 @@
-.tasklistComponent_to-do-item {
-  display: flex;
-  padding: 10px;
-}
-
-.tasklistComponent_button {
-  background: transparent;
-  color: #000;
-  font-size: 20px;
-  border: none;
-  padding: 0px 10px 10px 10px;
-}
-
 .tasklistComponent_container {
   display: flex;
   justify-content: center;

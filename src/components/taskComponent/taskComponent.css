@@ -1,0 +1,22 @@
+.taskComponent_to-do-item {
+  display: flex;
+  padding: 10px;
+  width: 200px;
+}
+
+.taskComponent_button {
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  padding: 0px 10px 10px 10px;
+}
+
+.taskComponent_container {
+  display: flex;
+  justify-content: center;
+}
+
+.taskComponent_task-input {
+  min-width: 150px;
+}

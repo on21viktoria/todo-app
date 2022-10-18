@@ -1,7 +1,12 @@
 .startpageComponent_button {
   background: transparent;
-  color: #000;
+  color: #fff;
   font-size: 20px;
   border: none;
   padding: 0px 10px 10px 10px;
+}
+
+* {
+  background-color: #000;
+  color: #fff;
 }
