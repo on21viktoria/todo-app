@@ -1,10 +1,12 @@
 import React from "react";
 
 export const TaskComponent = ({ taskName }) => {
+  function editToDo() {}
+
   return (
     <div>
       <p>{taskName}</p>
-      <button>Edit</button>
+      <button onClick={editToDo}>Edit</button>
       <button>Delete</button>
     </div>
   );
