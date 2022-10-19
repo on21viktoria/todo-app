@@ -13,18 +13,23 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {showTaskpage ? (
-        <TaskpageComponent />
-      ) : (
-        <StartpageComponent
-          title={"Herzlich Willkommen zur To Do App!"}
-          logo={logo}
-          buttonName={"Start"}
-          isVisible={true}
-          functionShowTaskpageComponent={changeToTaskpageComponent}
-        />
-      )}
+    <div className="App container">
+      <div className="row mt-5 align-items-center">
+        {/* <div className="col d-flex "> */}
+          {showTaskpage ? (
+            <TaskpageComponent />
+          ) : (
+            <StartpageComponent
+              className="d-flex"
+              title={"Herzlich Willkommen zur To Do App!"}
+              logo={logo}
+              buttonName={"Lege eine Liste an"}
+              isVisible={true}
+              functionShowTaskpageComponent={changeToTaskpageComponent}
+            />
+          )}
+        {/* </div> */}
+      </div>
     </div>
   );
 }

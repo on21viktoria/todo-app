@@ -1,20 +1,18 @@
-import React, { useState } from "react";
 import { TaskComponent } from "../taskComponent/taskComponent";
 import "./tasklistComponent.css";
 
 // Zeigt die vom Nutzer eingegebenen To Dos als Liste an.
-export const TasklistComponent = ({ functionToDeleteTask, toDos }) => {
+export const TasklistComponent = ({ functionToDeleteTask, functionToSaveChanges, toDos }) => {
+
   function deleteTask(idToDelete) {
     functionToDeleteTask(idToDelete);
-  }
+  };
 
   return (
-    <div className="tasklistComponent_container">
-      <ul>
+    <div>
         {toDos.map((toDo) => (
-          <TaskComponent deleteTask={deleteTask} task={toDo} />
+          <TaskComponent functionToSaveChanges={functionToSaveChanges} deleteTask={deleteTask} task={toDo} key={toDo.id}/>
         ))}
-      </ul>
     </div>
   );
 };

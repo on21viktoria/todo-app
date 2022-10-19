@@ -15,7 +15,7 @@
   Nimmt Eingaben von Nutzer entgegen.
   Stateful component, da Eingaben des Nutzers dynamisch zwischengespeichert müssen.
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

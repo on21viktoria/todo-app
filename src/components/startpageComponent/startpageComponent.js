@@ -19,12 +19,14 @@ export const StartpageComponent = ({
   if (startpageVisibility) {
     return (
       <div>
-        <h1 class="startpageComponent_headline">{title}</h1>
-        <div>
+        <div className="row">
+          <h1 className="mt-3">{title}</h1>
+        </div>
+        <div className="row justify-content-around">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <button className="startpageComponent_button" onClick={hideStartpage}>
-          {buttonName}
+        <button className="btn btn-light btn-lg" onClick={hideStartpage}>
+            {buttonName}
         </button>
       </div>
     );

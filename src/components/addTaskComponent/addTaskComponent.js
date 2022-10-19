@@ -20,16 +20,16 @@ export const AddTaskComponent = ({ functionToAddTask }) => {
   }
 
   return (
-    <div>
+    <div className="m-auto mb-5 input-group w-50">
       <input
-        class="addTaskComponent_task-input"
+        className="me-4 form-control"
         type="text"
         placeholder="Tippe etwas..."
         value={newTodo.taskName || ""}
         onChange={changeHandler}
       />
-      <button className="addTaskComponent_button" onClick={addItem}>
-        Hinzufügen
+      <button className="btn btn-outline-success rounded-circle" onClick={addItem}>
+        <i className="bi bi-plus-lg "></i>
       </button>
     </div>
   );
