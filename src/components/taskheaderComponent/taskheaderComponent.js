@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-export const TaskheaderComponent = ({isReadonly, task}) => {
+export const TaskheaderComponent = ({isReadonly, task, updatingTask, setUpdatingTask}) => {
     const [todoDone, setTodoDone] = useState(false);
-    const [updatingTask, setUpdatingTask] = useState(task);
+
 
     function checkboxHandler() {
         const changed = !todoDone;
