@@ -1,21 +1,27 @@
 import React, { useState } from "react";
 
-export const TaskheaderComponent = ({isReadonly, task, updatingTask, setUpdatingTask}) => {
-    const [todoDone, setTodoDone] = useState(false);
+// Zeigt den Namen des Tasks an sowie die Checkbox zum Durchstreichen des Tasks.
+// Verwaltet Speichern von Änderungen und Durchstreichen eines Tasks.
+export const TaskheaderComponent = ({
+  isReadonly,
+  task,
+  updatingTask,
+  setUpdatingTask,
+}) => {
+  const [todoDone, setTodoDone] = useState(false);
 
+  function checkboxHandler() {
+    const changed = !todoDone;
+    setTodoDone(changed);
+  }
 
-    function checkboxHandler() {
-        const changed = !todoDone;
-        setTodoDone(changed);    
-      };
-
-    function changeHandler(event) {
-        const newTempTodoObject = {
-          id: updatingTask.id,
-          taskName: event.target.value,
-        }
-        setUpdatingTask(newTempTodoObject)
-      };
+  function changeHandler(event) {
+    const newTempTodoObject = {
+      id: updatingTask.id,
+      taskName: event.target.value,
+    };
+    setUpdatingTask(newTempTodoObject);
+  }
 
   return (
     <div className="card-header container">

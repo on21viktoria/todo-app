@@ -15,6 +15,18 @@
   Nimmt Eingaben von Nutzer entgegen.
   Stateful component, da Eingaben des Nutzers dynamisch zwischengespeichert müssen.
 
+- taskheaderComponent:
+  Zeigt den Namen des Tasks an sowie die Checkbox zum Durchstreichen des Tasks.Verwaltet Speichern von Änderungen und Durchstreichen eines Tasks.
+  Stateful component, da er den Zustand der Checkbox speichern muss.
+
+- taskbodyComponent:
+  Verwaltet das Bearbeiten, Änderungen Speichern und Löschen von einzelnen Tasks über entsprechende Buttons.
+  Stateless component, da die benötigten Daten von den Elternkomponenten übergeben werden und die Komponente selbst keine Änderungen verwalten muss.
+
+- taskComponent:
+  Bringt die beiden Komponenten TaskheaderComponent und TaskbodyComponent zusammen.
+  Stateful component, da beide Kindelemente States benötigen, die in der Elternkomponente geändert werden müssen. Sie werden an die Kindelemente weitergegeben.
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
