@@ -1,4 +1,4 @@
-import logo from "./LogoKniffeligeGruppe3.svg";
+import logo from "./LogoKniffeligeGruppe.svg";
 import "./App.css";
 import { StartpageComponent } from "./components/startpageComponent/startpageComponent.js";
 import { TaskpageComponent } from "./components/taskpageComponent/taskpageComponent.js";
