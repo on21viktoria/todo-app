@@ -1,31 +1,36 @@
-# About this project
+## Über die einzelnen Komponenten
 
-- startpageComponent:
-  Stateful component, da sie ihren Sichtbarkeitsstatus selbst ändern muss, um zu verschwinden.
+- StartpageComponent:
   Dient als Willkommensbildschirm, bevor die To-Do-List angezeigt wird.
+  Stateful component, da sie ihren Sichtbarkeitsstatus selbst ändern muss, um zu verschwinden.
 
-- taskpageComponent:
+- TaskpageComponent:
   Bildet nach der StartpageComponent eine zweite Seite, auf der die Funktionalitäten der To-Do-List zusammengefasst sind.
-  Stateful component, da sie die eingegeben To Dos aus der TextInputComponent als Liste speichern muss, um sie an die TasklistComponent weiterzugeben.
+  Stateful component, da sie die eingegeben To Dos aus der AddTaskComponent als Liste speichern muss, um sie an die TasklistComponent weiterzugeben.
 
-- tasklistComponent:
-  Stateless component, da die tasklistComponent nur die von der Elternkomponente übergebenen To Dos anzeigt.
+- TasklistComponent:
+  Zeigt die eingegebenen To Dos des Nutzers an.
+  Stateless component, da die TasklistComponent nur die von der Elternkomponente übergebenen To Dos anzeigt.
 
-- addTaskComponent:
+- AddTaskComponent:
   Nimmt Eingaben von Nutzer entgegen.
   Stateful component, da Eingaben des Nutzers dynamisch zwischengespeichert müssen.
 
-- taskheaderComponent:
+- TaskheaderComponent:
   Zeigt den Namen des Tasks an sowie die Checkbox zum Durchstreichen des Tasks.Verwaltet Speichern von Änderungen und Durchstreichen eines Tasks.
   Stateful component, da er den Zustand der Checkbox speichern muss.
 
-- taskbodyComponent:
+- TaskbodyComponent:
   Verwaltet das Bearbeiten, Änderungen Speichern und Löschen von einzelnen Tasks über entsprechende Buttons.
   Stateless component, da die benötigten Daten von den Elternkomponenten übergeben werden und die Komponente selbst keine Änderungen verwalten muss.
 
-- taskComponent:
+- TaskComponent:
   Bringt die beiden Komponenten TaskheaderComponent und TaskbodyComponent zusammen.
   Stateful component, da beide Kindelemente States benötigen, die in der Elternkomponente geändert werden müssen. Sie werden an die Kindelemente weitergegeben.
+
+## CSS
+
+Zu Übungszwecken wurde für die graphische Gestaltung des Projekts das Framework Bootstrap eingesetzt.
 
 ## Getting Started with Create React App
 

@@ -15,7 +15,6 @@ function App() {
   return (
     <div className="App container">
       <div className="row mt-5 align-items-center">
-        {/* <div className="col d-flex "> */}
         {showTaskpage ? (
           <TaskpageComponent />
         ) : (
@@ -28,7 +27,6 @@ function App() {
             functionShowTaskpageComponent={changeToTaskpageComponent}
           />
         )}
-        {/* </div> */}
       </div>
     </div>
   );
