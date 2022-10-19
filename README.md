@@ -1,4 +1,21 @@
-# Getting Started with Create React App
+# About this project
+
+- startpageComponent:
+  Stateful component, da sie ihren Sichtbarkeitsstatus selbst ändern muss, um zu verschwinden.
+  Dient als Willkommensbildschirm, bevor die To-Do-List angezeigt wird.
+
+- taskpageComponent:
+  Bildet nach der StartpageComponent eine zweite Seite, auf der die Funktionalitäten der To-Do-List zusammengefasst sind.
+  Stateful component, da sie die eingegeben To Dos aus der TextInputComponent als Liste speichern muss, um sie an die TasklistComponent weiterzugeben.
+
+- tasklistComponent:
+  Stateless component, da die tasklistComponent nur die von der Elternkomponente übergebenen To Dos anzeigt.
+
+- addTaskComponent:
+  Nimmt Eingaben von Nutzer entgegen.
+  Stateful component, da Eingaben des Nutzers dynamisch zwischengespeichert müssen.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

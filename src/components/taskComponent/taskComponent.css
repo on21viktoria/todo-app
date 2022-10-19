@@ -1,0 +1,7 @@
+.task-component {
+  color: black
+}
+
+#closed-task {
+  text-decoration: line-through;
+}

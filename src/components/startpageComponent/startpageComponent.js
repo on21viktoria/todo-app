@@ -1,21 +1,34 @@
 import React, { useState } from "react";
+import "./startpageComponent.css";
 
-export const StartpageComponent = ({ title, logo, isVisible, buttonName }) => {
-  const [internalVisibility, setVisibility] = useState(isVisible);
+// Zeigt eine Startseite an, die mit Klick auf einen Button ausgeblendet werden kann.
+export const StartpageComponent = ({
+  title,
+  logo,
+  isVisible,
+  buttonName,
+  functionShowTaskpageComponent,
+}) => {
+  const [startpageVisibility, setStartpageVisibility] = useState(isVisible);
 
   function hideStartpage() {
-    setVisibility(false);
+    setStartpageVisibility(false);
+    functionShowTaskpageComponent();
   }
 
-  if (internalVisibility) {
+  if (startpageVisibility) {
     return (
       <div>
-        <h1>{title}</h1>
-        <div>
+        <div className="row">
+          <h1 className="mt-3">{title}</h1>
+        </div>
+        <div className="row justify-content-around">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <button onClick={hideStartpage}>{buttonName}</button>
+        <button className="btn btn-light btn-lg" onClick={hideStartpage}>
+            {buttonName}
+        </button>
       </div>
     );
-  } else return <></>;
+  } else return;
 };
