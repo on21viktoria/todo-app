@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./LogoKniffeligeGruppe3.svg";
 import "./App.css";
 import { StartpageComponent } from "./components/startpageComponent/startpageComponent.js";
 import { TaskpageComponent } from "./components/taskpageComponent/taskpageComponent.js";
@@ -16,18 +16,18 @@ function App() {
     <div className="App container">
       <div className="row mt-5 align-items-center">
         {/* <div className="col d-flex "> */}
-          {showTaskpage ? (
-            <TaskpageComponent />
-          ) : (
-            <StartpageComponent
-              className="d-flex"
-              title={"Herzlich Willkommen zur To Do App!"}
-              logo={logo}
-              buttonName={"Lege eine Liste an"}
-              isVisible={true}
-              functionShowTaskpageComponent={changeToTaskpageComponent}
-            />
-          )}
+        {showTaskpage ? (
+          <TaskpageComponent />
+        ) : (
+          <StartpageComponent
+            className="d-flex"
+            title={"Herzlich Willkommen zur To Do App!"}
+            logo={logo}
+            buttonName={"Lege eine Liste an"}
+            isVisible={true}
+            functionShowTaskpageComponent={changeToTaskpageComponent}
+          />
+        )}
         {/* </div> */}
       </div>
     </div>
