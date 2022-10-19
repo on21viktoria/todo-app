@@ -28,6 +28,9 @@
   Bringt die beiden Komponenten TaskheaderComponent und TaskbodyComponent zusammen.
   Stateful component, da beide Kindelemente States benötigen, die in der Elternkomponente geändert werden müssen. Sie werden an die Kindelemente weitergegeben.
 
+- FooterComponent:
+  Zeigt den Footer auf der Start- und Taskpage Seite an.
+
 ## CSS
 
 Zu Übungszwecken wurde für die graphische Gestaltung des Projekts das Framework Bootstrap eingesetzt.
