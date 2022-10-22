@@ -1,4 +1,4 @@
-## Über die einzelnen Komponenten
+# Über die einzelnen Komponenten
 
 - StartpageComponent:
   Dient als Willkommensbildschirm, bevor die To-Do-List angezeigt wird.
